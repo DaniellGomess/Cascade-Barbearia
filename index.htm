@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>King's Garage Barber | Barbearia & Estética Masculina em São Paulo</title>
+    <meta name="description" content="Barbearia premium em São Paulo. Cortes clássicos e modernos, barba alinhada, tratamentos masculinos e ambiente exclusivo. Agende pelo WhatsApp.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="King's Garage Barber | Barbearia & Estética Masculina">
+    <meta property="og:description" content="Seu estilo. Sua identidade. Cortes, barba e experiência premium em um ambiente exclusivo.">
+    <meta property="og:type" content="website">
+
+    <!-- Schema.org LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BarberShop",
+      "name": "King's Garage Barber",
+      "image": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=800&auto=format&fit=crop&q=80",
+      "telephone": "+55-11-95492-2131",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Paulista, 1500",
+        "addressLocality": "São Paulo",
+        "addressRegion": "SP",
+        "postalCode": "01310-200",
+        "addressCountry": "BR"
+      },
+      "priceRange": "$$",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "19:00"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Tailwind CSS CDN -->
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    kg: {
+                        dark: '#1a1d21',        // Fundo principal (Cinza escuro)
+                        charcoal: '#24282d',    // Seções secundárias
+                        graphite: '#2f353b',    // Cards e detalhes
+                        border: '#3e464d',      // Bordas
+                        bronze: '#28a0ad',      // Cor principal da Cascade (Azul)
+                        bronzeHover: '#1f828c', // Tom mais escuro para hover
+                        cobre: '#28a0ad',       // Mantendo o padrão
+                        redAccent: '#28a0ad',   // Substituindo o vermelho
+                        textMuted: '#94a3b8'
+                    }
+                },
+                fontFamily: {
+                    sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                    display: ['Oswald', 'Impact', 'sans-serif']
+                }
+            }
+        }
+    }
+</script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    style>
+    body {
+        background-color: #1a1d21;
+        color: #f1f5f9;
+        font-family: 'Inter', sans-serif;
+    }
+    .bronze-gradient {
+        background: linear-gradient(135deg, #4ad2e0 0%, #28a0ad 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .bronze-btn-gradient {
+        background: linear-gradient(135deg, #28a0ad 0%, #1f828c 100%);
+        color: white !important;
+    }
+    details summary::-webkit-details-marker { display: none; }
+</style>
+</head>
+<body class="selection:bg-kg-bronze selection:text-black">
+
+    <!-- ========================================================================= -->
+    <!-- BARRA DE DEMONSTRAÇÃO EXCLUSIVA CITY OF TECH (APENAS NO DEMO) -->
+    <!-- ========================================================================= -->
+    <aside class="bg-gradient-to-r from-slate-900 via-sky-950 to-slate-900 text-white text-xs py-2 px-4 border-b border-sky-500/30 sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+            <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-brand-cyan animate-ping"></span>
+                <span class="font-medium text-slate-300">
+                    <strong class="text-white">MODELO DEMONSTRATIVO:</strong> Barbearia & Estética Masculina criado pela <span class="text-[#00d2ff] font-bold">City Of Tech</span>.
+                </span>
+            </div>
+            <a href="https://wa.me/5511954922131?text=Ol%C3%A1%20Daniel!%20Conheci%20os%20modelos%20de%20sites%20da%20City%20Of%20Tech%20e%20gostei%20do%20modelo%20Barbearia%20%26%20Est%C3%A9tica%20Masculina.%20Gostaria%20de%20saber%20mais%20sobre%20a%20personaliza%C3%A7%C3%A3o%20deste%20site%20para%20minha%20empresa." target="_blank" rel="noopener noreferrer" class="px-3.5 py-1 rounded-md bg-[#00d2ff] hover:bg-[#38bdf8] text-slate-950 font-black text-[11px] uppercase tracking-wider transition whitespace-nowrap">
+                Quero Este Site Para Minha Empresa →
+            </a>
+        </div>
+    </aside>
+
+    <!-- ========================================================================= -->
+    <!-- HEADER PRINCIPAL -->
+    <!-- ========================================================================= -->
+    <header id="main-header" class="sticky top-[37px] sm:top-[33px] z-40 transition-all duration-300 bg-kg-dark/95 backdrop-blur-md border-b border-kg-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- LOGO -->
+            <a href="#inicio" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-kg-graphite border border-kg-bronze/40 flex items-center justify-center text-kg-bronze group-hover:border-kg-bronze transition">
+                    <i data-lucide="crown" class="w-5 h-5"></i>
+                </div>
+                <div>
+                    <span class="font-display text-xl font-bold text-white tracking-wider block">KING'S <span class="text-kg-bronze">GARAGE</span></span>
+                    <span class="text-[9px] uppercase tracking-[0.25em] text-slate-400 block -mt-1 font-medium">Barbearia & Estética</span>
+                </div>
+            </a>
+
+            <!-- NAVEGAÇÃO DESKTOP -->
+            <nav class="hidden lg:flex items-center gap-7 text-xs font-semibold uppercase tracking-wider text-slate-300">
+                <a href="#inicio" class="hover:text-kg-bronze transition">Início</a>
+                <a href="#servicos" class="hover:text-kg-bronze transition">Serviços</a>
+                <a href="#experiencia" class="hover:text-kg-bronze transition">A Experiência</a>
+                <a href="#profissionais" class="hover:text-kg-bronze transition">Profissionais</a>
+                <a href="#galeria" class="hover:text-kg-bronze transition">Galeria</a>
+                <a href="#guia-estilo" class="hover:text-kg-bronze transition">Guia de Estilo</a>
+                <a href="#contato" class="hover:text-kg-bronze transition">Contato</a>
+            </nav>
+
+            <!-- CTA HEADER -->
+            <div class="hidden sm:flex items-center gap-3">
+                <a href="#" id="header-whatsapp-btn" target="_blank" rel="noopener noreferrer" class="bronze-btn-gradient text-slate-950 font-bold text-xs uppercase tracking-wider px-5 py-2.5 rounded-xl hover:shadow-lg hover:shadow-kg-bronze/20 transition transform hover:-translate-y-0.5 flex items-center gap-2">
+                    <i data-lucide="calendar" class="w-4 h-4"></i> Agendar Horário
+                </a>
+            </div>
+
+            <!-- TOGGLE MOBILE -->
+            <button onclick="toggleMenu()" class="lg:hidden text-slate-300 hover:text-white p-2" aria-label="Abrir Menu">
+                <i data-lucide="menu" id="menu-icon" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- MENU MOBILE DROPDOWN -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-kg-charcoal border-b border-kg-border px-6 py-6 space-y-4">
+            <nav class="flex flex-col space-y-3 text-sm font-semibold uppercase tracking-wider text-slate-300">
+                <a href="#inicio" onclick="toggleMenu()" class="hover:text-kg-bronze py-1">Início</a>
+                <a href="#servicos" onclick="toggleMenu()" class="hover:text-kg-bronze py-1">Serviços & Preços</a>
+                <a href="#experiencia" onclick="toggleMenu()" class="hover:text-kg-bronze py-1">A Experiência</a>
+                <a href="#profissionais" onclick="toggleMenu()" class="hover:text-kg-bronze py-1">Profissionais</a>
+                <a href="#galeria" onclick="toggleMenu()" class="hover:text-kg-bronze py-1">Galeria de Trabalhos</a>
+                <a href="#guia-estilo" onclick="toggleMenu()" class="hover:text-kg-bronze py-1">Guia de Estilo</a>
+                <a href="#contato" onclick="toggleMenu()" class="hover:text-kg-bronze py-1">Contato & Localização</a>
+            </nav>
+            <div class="pt-4 border-t border-kg-border flex flex-col gap-2">
+                <a href="#" id="mobile-nav-whatsapp" target="_blank" class="w-full text-center bronze-btn-gradient text-slate-950 font-bold py-3 rounded-xl uppercase text-xs tracking-wider">
+                    Agendar pelo WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========================================================================= -->
+    <!-- HERO SECTION -->
+    <!-- ========================================================================= -->
+    <section id="inicio" class="relative min-h-[90vh] flex items-center justify-center overflow-hidden py-20">
+        <!-- BACKGROUND COM OVERLAY -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=1920&auto=format&fit=crop&q=80" 
+                 alt="Barbeiro trabalhando em ambiente contemporâneo" 
+                 class="w-full h-full object-cover object-center opacity-25">
+            <div class="absolute inset-0 bg-gradient-to-t from-kg-dark via-kg-dark/80 to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-kg-dark via-transparent to-kg-dark/60"></div>
+        </div>
+
+        <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+            
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-kg-graphite/90 border border-kg-bronze/30 text-kg-bronze text-xs font-bold uppercase tracking-widest">
+                <i data-lucide="scissors" class="w-3.5 h-3.5"></i> CUIDADOS MASCULINOS DE ALTO PADRÃO
+            </div>
+
+            <h1 class="font-display text-4xl sm:text-6xl md:text-7xl font-bold text-white tracking-tight leading-none">
+                Seu estilo começa <span class="bronze-gradient">aqui</span>.
+            </h1>
+
+            <p class="text-base sm:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed font-light">
+                Cortes clássicos e modernos, barba alinhada e cuidados masculinos para quem valoriza personalidade, estilo e uma experiência diferenciada.
+            </p>
+
+            <!-- CTAs HERO -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                <a href="#" id="hero-cta-whatsapp" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-8 py-4 rounded-xl bronze-btn-gradient text-slate-950 font-black text-sm uppercase tracking-wider hover:shadow-xl hover:shadow-kg-bronze/25 transition transform hover:-translate-y-0.5 flex items-center justify-center gap-2">
+                    <i data-lucide="message-circle" class="w-5 h-5"></i> AGENDAR HORÁRIO
+                </a>
+                <a href="#servicos" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-kg-graphite/90 hover:bg-kg-graphite text-white font-bold text-sm uppercase tracking-wider border border-kg-border transition flex items-center justify-center gap-2">
+                    CONHECER SERVIÇOS
+                </a>
+            </div>
+
+            <!-- INDICADORES RÁPIDOS -->
+            <div class="grid grid-cols-3 max-w-lg mx-auto gap-4 pt-8 text-center text-xs text-slate-400 font-medium border-t border-kg-border/60">
+                <div class="flex items-center justify-center gap-1.5">
+                    <span class="text-kg-bronze font-bold">✂️</span> Corte & Barba
+                </div>
+                <div class="flex items-center justify-center gap-1.5 border-x border-kg-border/60">
+                    <span class="text-kg-bronze font-bold">💈</span> Especialistas
+                </div>
+                <div class="flex items-center justify-center gap-1.5">
+                    <span class="text-kg-bronze font-bold">📍</span> <span class="city-name-placeholder">São Paulo / SP</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- BLOCO DE SEO LOCAL & APRESENTAÇÃO -->
+    <!-- ========================================================================= -->
+    <section class="bg-kg-charcoal py-16 border-y border-kg-border">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+            <span class="text-kg-bronze font-bold text-xs uppercase tracking-widest">Tradição & Contemporaneidade</span>
+            <h2 class="font-display text-2xl sm:text-4xl font-bold text-white">
+                Barbearia masculina em <span class="city-name-placeholder">São Paulo</span> para quem leva estilo a sério.
+            </h2>
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                Na <strong class="text-white">King's Garage Barber</strong>, cada atendimento é pensado para valorizar o estilo de cada cliente. Corte masculino, barba desenhada, acabamento preciso e tratamentos capilares realizados por profissionais preparados em um ambiente confortável, climatizado e feito para você relaxar.
+            </p>
+        </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- SERVIÇOS EM DESTAQUE -->
+    <!-- ========================================================================= -->
+    <section id="servicos" class="py-20 bg-kg-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-14 space-y-2">
+                <span class="text-kg-bronze font-bold text-xs uppercase tracking-widest">Menu de Cuidados</span>
+                <h2 class="font-display text-3xl sm:text-5xl font-bold text-white">O cuidado que seu estilo merece</h2>
+                <p class="text-slate-400 text-sm">Técnicas modernas, produtos premium e precisão em cada detalhe.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="services-container">
+                
+                <!-- SERVIÇO 1 -->
+                <div class="bg-kg-card rounded-2xl border border-kg-border p-6 flex flex-col justify-between hover:border-kg-bronze/40 transition group">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl">✂️</span>
+                            <span class="font-display text-xl font-bold text-kg-bronze">R$ 55,00</span>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold text-white group-hover:text-kg-bronze transition">Corte Masculino</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">Cortes clássicos, modernos, degradê/fade ou tesoura, personalizados de acordo com seu estilo e formato de rosto.</p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-kg-border/60">
+                        <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Conheci%20a%20King's%20Garage%20Barber%20pelo%20site%20e%20gostaria%20de%20verificar%20um%20hor%C3%A1rio%20para%20Corte%20Masculino." target="_blank" class="w-full py-2.5 rounded-xl bg-kg-graphite hover:bg-kg-bronze text-white hover:text-slate-950 font-bold text-xs uppercase tracking-wider transition text-center flex items-center justify-center gap-1.5">
+                            <i data-lucide="message-square" class="w-3.5 h-3.5"></i> Agendar pelo WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- SERVIÇO 2 -->
+                <div class="bg-kg-card rounded-2xl border border-kg-border p-6 flex flex-col justify-between hover:border-kg-bronze/40 transition group">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl">🧔</span>
+                            <span class="font-display text-xl font-bold text-kg-bronze">R$ 45,00</span>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold text-white group-hover:text-kg-bronze transition">Barba & Barboterapia</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">Modelagem, acabamento navalhado, toalha quente, óleos essenciais e hidratação profunda para alinhar os fios.</p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-kg-border/60">
+                        <a href="https://wa.me/551199999999?text=Ol%C3%A1!%20Conheci%20a%20King's%20Garage%20Barber%20pelo%20site%20e%20gostaria%20de%20verificar%20um%20hor%C3%A1rio%20para%20Barba." target="_blank" class="w-full py-2.5 rounded-xl bg-kg-graphite hover:bg-kg-bronze text-white hover:text-slate-950 font-bold text-xs uppercase tracking-wider transition text-center flex items-center justify-center gap-1.5">
+                            <i data-lucide="message-square" class="w-3.5 h-3.5"></i> Agendar pelo WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- SERVIÇO 3: COMBO DESTAQUE -->
+                <div class="bg-gradient-to-b from-kg-card to-kg-graphite rounded-2xl border-2 border-kg-bronze p-6 flex flex-col justify-between relative shadow-xl">
+                    <div class="absolute -top-3 right-4 px-3 py-0.5 rounded-full bg-kg-bronze text-slate-950 font-black text-[10px] uppercase tracking-wider">
+                        Mais Pedido
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl">💈</span>
+                            <span class="font-display text-2xl font-bold text-kg-bronze">R$ 90,00</span>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold text-white">Corte + Barba Completa</h3>
+                        <p class="text-xs text-slate-300 leading-relaxed">A experiência completa para renovar o visual por inteiro. Inclui toalha quente, alinhamento de barba e finalização com pomada premium.</p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-kg-border/60">
+                        <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Conheci%20a%20King's%20Garage%20Barber%20pelo%20site%20e%20gostaria%20de%20verificar%20um%20hor%C3%A1rio%20para%20Corte%20%2B%20Barba." target="_blank" class="w-full py-3 rounded-xl bronze-btn-gradient text-slate-950 font-black text-xs uppercase tracking-wider hover:opacity-95 transition text-center flex items-center justify-center gap-1.5">
+                            <i data-lucide="calendar-check" class="w-4 h-4"></i> Agendar Combo VIP
+                        </a>
+                    </div>
+                </div>
+
+                <!-- SERVIÇO 4 -->
+                <div class="bg-kg-card rounded-2xl border border-kg-border p-6 flex flex-col justify-between hover:border-kg-bronze/40 transition group">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl">🪒</span>
+                            <span class="font-display text-xl font-bold text-kg-bronze">R$ 25,00</span>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold text-white group-hover:text-kg-bronze transition">Acabamento & Pezinho</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">Contornos na navalha, limpeza do pescoço e pequenos ajustes para manter seu corte alinhado entre um atendimento e outro.</p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-kg-border/60">
+                        <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Conheci%20a%20King's%20Garage%20Barber%20pelo%20site%20e%20gostaria%20de%20verificar%20um%20hor%C3%A1rio%20para%20Acabamento." target="_blank" class="w-full py-2.5 rounded-xl bg-kg-graphite hover:bg-kg-bronze text-white hover:text-slate-950 font-bold text-xs uppercase tracking-wider transition text-center flex items-center justify-center gap-1.5">
+                            <i data-lucide="message-square" class="w-3.5 h-3.5"></i> Agendar pelo WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- SERVIÇO 5 -->
+                <div class="bg-kg-card rounded-2xl border border-kg-border p-6 flex flex-col justify-between hover:border-kg-bronze/40 transition group">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl">🧴</span>
+                            <span class="font-display text-xl font-bold text-kg-bronze">R$ 40,00</span>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold text-white group-hover:text-kg-bronze transition">Tratamentos & Hidratação</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">Limpeza e esfoliação de couro cabeludo, hidratação capilar profunda e controle de oleosidade com produtos profissionais.</p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-kg-border/60">
+                        <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Conheci%20a%20King's%20Garage%20Barber%20pelo%20site%20e%20gostaria%20de%20verificar%20um%20hor%C3%A1rio%20para%20Tratamentos." target="_blank" class="w-full py-2.5 rounded-xl bg-kg-graphite hover:bg-kg-bronze text-white hover:text-slate-950 font-bold text-xs uppercase tracking-wider transition text-center flex items-center justify-center gap-1.5">
+                            <i data-lucide="message-square" class="w-3.5 h-3.5"></i> Agendar pelo WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- SERVIÇO 6 -->
+                <div class="bg-kg-card rounded-2xl border border-kg-border p-6 flex flex-col justify-between hover:border-kg-bronze/40 transition group">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl">👑</span>
+                            <span class="font-display text-xl font-bold text-kg-bronze">Sob Consulta</span>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold text-white group-hover:text-kg-bronze transition">Dia do Noivo & Confraria</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">Atendimento exclusivo com espaço reservado para noivo e padrinhos. Cerveja artesanal, café especial e cuidados completos.</p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-kg-border/60">
+                        <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Dia%20do%20Noivo%20na%20King's%20Garage." target="_blank" class="w-full py-2.5 rounded-xl bg-kg-graphite hover:bg-kg-bronze text-white hover:text-slate-950 font-bold text-xs uppercase tracking-wider transition text-center flex items-center justify-center gap-1.5">
+                            <i data-lucide="message-square" class="w-3.5 h-3.5"></i> Consultar Pacote
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- A EXPERIÊNCIA DA MARCA (EDITORIAL) -->
+    <!-- ========================================================================= -->
+    <section id="experiencia" class="py-20 bg-kg-charcoal border-y border-kg-border relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- FOTO EDITORIAL -->
+                <div class="lg:col-span-6 relative">
+                    <div class="rounded-3xl overflow-hidden border border-kg-border relative shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=800&auto=format&fit=crop&q=80" 
+                             alt="Ambiente da Barbearia King's Garage" 
+                             class="w-full h-[450px] object-cover object-center">
+                        <div class="absolute inset-0 bg-gradient-to-t from-kg-dark via-transparent to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-kg-dark/90 backdrop-blur-md border border-kg-border">
+                            <span class="text-kg-bronze font-bold text-xs uppercase">Estética Urbana Contemporânea</span>
+                            <p class="text-white text-sm font-semibold mt-0.5">Música selecionada, café especial e chopp gelado.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TEXTO & PILARES -->
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-kg-bronze font-bold text-xs uppercase tracking-widest">Mais que cortar cabelo</span>
+                    <h2 class="font-display text-3xl sm:text-5xl font-bold text-white leading-tight">
+                        É sobre reservar um momento para você.
+                    </h2>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                        A King's Garage Barber foi criada para quebrar a rotina acelerada. Aqui você não entra apenas para um serviço rápido: você encontra profissionais focados em entender sua preferência e entregar um resultado impecável.
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-4 pt-2">
+                        <div class="p-4 rounded-xl bg-kg-dark border border-kg-border">
+                            <i data-lucide="award" class="w-5 h-5 text-kg-bronze mb-2"></i>
+                            <h3 class="font-bold text-white text-sm">Profissionais Qualificados</h3>
+                            <p class="text-xs text-slate-400 mt-1">Especialistas em visagismo e cortes sob medida.</p>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-kg-dark border border-kg-border">
+                            <i data-lucide="smile" class="w-5 h-5 text-kg-bronze mb-2"></i>
+                            <h3 class="font-bold text-white text-sm">Atendimento Personalizado</h3>
+                            <p class="text-xs text-slate-400 mt-1">Cada cliente tem seu estilo e preferência respeitados.</p>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-kg-dark border border-kg-border">
+                            <i data-lucide="coffee" class="w-5 h-5 text-kg-bronze mb-2"></i>
+                            <h3 class="font-bold text-white text-sm">Ambiente Confortável</h3>
+                            <p class="text-xs text-slate-400 mt-1">Cadeiras ergonômicas, ar-condicionado e lounge.</p>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-kg-dark border border-kg-border">
+                            <i data-lucide="sparkles" class="w-5 h-5 text-kg-bronze mb-2"></i>
+                            <h3 class="font-bold text-white text-sm">Produtos Selecionados</h3>
+                            <p class="text-xs text-slate-400 mt-1">Pomadas, óleos e balms das melhores marcas.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- PROFISSIONAIS / EQUIPE -->
+    <!-- ========================================================================= -->
+    <section id="profissionais" class="py-20 bg-kg-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-14 space-y-2">
+                <span class="text-kg-bronze font-bold text-xs uppercase tracking-widest">Nossa Bancada</span>
+                <h2 class="font-display text-3xl sm:text-5xl font-bold text-white">Conheça quem cuida do seu estilo</h2>
+                <p class="text-slate-400 text-sm">Profissionais apaixonados por técnica, detalhe e acabamento.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- PROFISSIONAL 1 -->
+                <div class="bg-kg-card rounded-2xl border border-kg-border overflow-hidden group hover:border-kg-bronze/50 transition flex flex-col justify-between">
+                    <div>
+                        <div class="h-64 overflow-hidden bg-slate-950 relative">
+                            <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=600&auto=format&fit=crop&q=80" 
+                                 alt="Lucas Martins - Barbeiro Especialista" 
+                                 class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-kg-card via-transparent to-transparent"></div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display text-2xl font-bold text-white">Lucas Martins</h3>
+                            <span class="text-xs font-bold text-kg-bronze uppercase tracking-wider block mb-2">Especialista em Fade & Cortes Modernos</span>
+                            <p class="text-xs text-slate-400 leading-relaxed">Mais de 7 anos de experiência, especialista em degradê de alta precisão, texturização e acabamento navalhado.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Conheci%20a%20King's%20Garage%20Barber%20pelo%20site%20e%20gostaria%20de%20verificar%20um%20hor%C3%A1rio%20dispon%C3%ADvel%20com%20o%20Lucas." target="_blank" class="w-full py-2.5 rounded-xl bronze-btn-gradient text-slate-950 font-bold text-xs uppercase tracking-wider transition text-center flex items-center justify-center gap-1.5">
+                            <i data-lucide="calendar" class="w-3.5 h-3.5"></i> Agendar com Lucas
+                        </a>
+                    </div>
+                </div>
+
+                <!-- PROFISSIONAL 2 -->
+                <div class="bg-kg-card rounded-2xl border border-kg-border overflow-hidden group hover:border-kg-bronze/50 transition flex flex-col justify-between">
+                    <div>
+                        <div class="h-64 overflow-hidden bg-slate-950 relative">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&auto=format&fit=crop&q=80" 
+                                 alt="Rafael Costa - Barbeiro Especialista em Barba" 
+                                 class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-kg-card via-transparent to-transparent"></div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display text-2xl font-bold text-white">Rafael Costa</h3>
+                            <span class="text-xs font-bold text-kg-bronze uppercase tracking-wider block mb-2">Cortes Clássicos & Barboterapia</span>
+                            <p class="text-xs text-slate-400 leading-relaxed">Focado no estilo clássico na tesoura, alinhamento perfeito de barba tradicional e tratamento com toalha quente.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Conheci%20a%20King's%20Garage%20Barber%20pelo%20site%20e%20gostaria%20de%20verificar%20um%20hor%C3%A1rio%20dispon%C3%ADvel%20com%20o%20Rafael." target="_blank" class="w-full py-2.5 rounded-xl bronze-btn-gradient text-slate-950 font-bold text-xs uppercase tracking-wider transition text-center flex items-center justify-center gap-1.5">
+                            <i data-lucide="calendar" class="w-3.5 h-3.5"></i> Agendar com Rafael
+                        </a>
+                    </div>
+                </div>
+
+                <!-- PROFISSIONAL 3 -->
+                <div class="bg-kg-card rounded-2xl border border-kg-border overflow-hidden group hover:border-kg-bronze/50 transition flex flex-col justify-between sm:col-span-2 lg:col-span-1">
+                    <div>
+                        <div class="h-64 overflow-hidden bg-slate-950 relative">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&auto=format&fit=crop&q=80" 
+                                 alt="Thiago Silva - Visagista Masculino" 
+                                 class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-kg-card via-transparent to-transparent"></div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display text-2xl font-bold text-white">Thiago Silva</h3>
+                            <span class="text-xs font-bold text-kg-bronze uppercase tracking-wider block mb-2">Visagismo & Tratamentos</span>
+                            <p class="text-xs text-slate-400 leading-relaxed">Consultor de imagem masculina, especialista em harmonização de barba e tratamentos capilares anti-queda.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Conheci%20a%20King's%20Garage%20Barber%20pelo%20site%20e%20gostaria%20de%20verificar%20um%20hor%C3%A1rio%20dispon%C3%ADvel%20com%20o%20Thiago." target="_blank" class="w-full py-2.5 rounded-xl bronze-btn-gradient text-slate-950 font-bold text-xs uppercase tracking-wider transition text-center flex items-center justify-center gap-1.5">
+                            <i data-lucide="calendar" class="w-3.5 h-3.5"></i> Agendar com Thiago
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- GALERIA INTERATIVA COM FILTROS -->
+    <!-- ========================================================================= -->
+    <section id="galeria" class="py-20 bg-kg-charcoal border-y border-kg-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-10 space-y-2">
+                <span class="text-kg-bronze font-bold text-xs uppercase tracking-widest">Portfólio Real</span>
+                <h2 class="font-display text-3xl sm:text-5xl font-bold text-white">Estilo se mostra nos detalhes</h2>
+                <p class="text-slate-400 text-sm">Confira alguns dos trabalhos realizados diariamente na nossa bancada.</p>
+            </div>
+
+            <!-- FILTROS DE CATEGORIA -->
+            <div class="flex flex-wrap items-center justify-center gap-2 mb-10">
+                <button onclick="filterGallery('todos')" class="gallery-filter-btn px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider bg-kg-bronze text-slate-950 transition" data-filter="todos">Todos</button>
+                <button onclick="filterGallery('cortes')" class="gallery-filter-btn px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider bg-kg-graphite text-slate-300 hover:text-white transition" data-filter="cortes">Cortes</button>
+                <button onclick="filterGallery('barbas')" class="gallery-filter-btn px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider bg-kg-graphite text-slate-300 hover:text-white transition" data-filter="barbas">Barbas</button>
+                <button onclick="filterGallery('ambiente')" class="gallery-filter-btn px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider bg-kg-graphite text-slate-300 hover:text-white transition" data-filter="ambiente">Ambiente</button>
+            </div>
+
+            <!-- GRID DA GALERIA -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" id="gallery-grid">
+                
+                <div class="gallery-item cortes rounded-2xl overflow-hidden border border-kg-border h-60 relative group cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=1000')">
+                    <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=500&auto=format&fit=crop&q=80" alt="Corte Degradê Fade" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-kg-dark/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                        <i data-lucide="zoom-in" class="w-6 h-6 text-kg-bronze"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item barbas rounded-2xl overflow-hidden border border-kg-border h-60 relative group cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1000')">
+                    <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=500&auto=format&fit=crop&q=80" alt="Barba Alinhada" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-kg-dark/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                        <i data-lucide="zoom-in" class="w-6 h-6 text-kg-bronze"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item cortes rounded-2xl overflow-hidden border border-kg-border h-60 relative group cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=1000')">
+                    <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=500&auto=format&fit=crop&q=80" alt="Acabamento Navalhado" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-kg-dark/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                        <i data-lucide="zoom-in" class="w-6 h-6 text-kg-bronze"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item ambiente rounded-2xl overflow-hidden border border-kg-border h-60 relative group cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=1000')">
+                    <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=500&auto=format&fit=crop&q=80" alt="Ambiente Lounge Barbearia" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-kg-dark/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                        <i data-lucide="zoom-in" class="w-6 h-6 text-kg-bronze"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- DEPOIMENTOS DE CLIENTES -->
+    <!-- ========================================================================= -->
+    <section class="py-20 bg-kg-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12 space-y-2">
+                <span class="text-kg-bronze font-bold text-xs uppercase tracking-widest">Avaliações</span>
+                <h2 class="font-display text-3xl sm:text-5xl font-bold text-white">Quem passa pela cadeira, recomenda</h2>
+                <p class="text-xs text-slate-500 italic">* Área destinada para exibição de avaliações reais dos seus clientes.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="p-6 rounded-2xl bg-kg-card border border-kg-border space-y-4">
+                    <div class="flex text-amber-400 gap-1 text-sm">★★★★★</div>
+                    <p class="text-xs text-slate-300 leading-relaxed italic">"Ambiente de primeira, atendimento pontual e o corte degradê do Lucas é o mais perfeito da região. Recomendo de olhos fechados!"</p>
+                    <div class="pt-2 border-t border-kg-border/60">
+                        <strong class="text-white text-xs block">Rodrigo Albuquerque</strong>
+                        <span class="text-[10px] text-slate-400">Cliente há 2 anos</span>
+                    </div>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-kg-card border border-kg-border space-y-4">
+                    <div class="flex text-amber-400 gap-1 text-sm">★★★★★</div>
+                    <p class="text-xs text-slate-300 leading-relaxed italic">"A barboterapia com toalha quente é uma experiência indispensável. Ótimo café e profissionais que realmente entendem do que fazem."</p>
+                    <div class="pt-2 border-t border-kg-border/60">
+                        <strong class="text-white text-xs block">Marcos Vinícius</strong>
+                        <span class="text-[10px] text-slate-400">Cliente Frequente</span>
+                    </div>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-kg-card border border-kg-border space-y-4">
+                    <div class="flex text-amber-400 gap-1 text-sm">★★★★★</div>
+                    <p class="text-xs text-slate-300 leading-relaxed italic">"Fiz o pacote do Dia do Noivo com meus padrinhos. Foi sensacional! Cuidaram de cada detalhe e nos deixaram prontos para o grande dia."</p>
+                    <div class="pt-2 border-t border-kg-border/60">
+                        <strong class="text-white text-xs block">Felipe Guimarães</strong>
+                        <span class="text-[10px] text-slate-400">Dia do Noivo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- GUIA DE ESTILO (BLOG / DICAS) -->
+    <!-- ========================================================================= -->
+    <section id="guia-estilo" class="py-20 bg-kg-charcoal border-t border-kg-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14 space-y-2">
+                <span class="text-kg-bronze font-bold text-xs uppercase tracking-widest">Conteúdo & Dicas</span>
+                <h2 class="font-display text-3xl sm:text-5xl font-bold text-white">Guia de Estilo Masculino</h2>
+                <p class="text-slate-400 text-sm">Dicas práticas para manter seu corte, barba e visual sempre alinhados.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                
+                <article class="bg-kg-dark rounded-2xl border border-kg-border overflow-hidden hover:border-kg-bronze/40 transition">
+                    <div class="h-44 bg-slate-900 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=600&auto=format&fit=crop&q=80" alt="Diferenças entre tipos de degradê" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 space-y-2">
+                        <span class="text-[10px] font-bold text-kg-bronze uppercase tracking-wider">Cortes & Tendências</span>
+                        <h3 class="font-display text-xl font-bold text-white">Degradê baixo, médio ou alto: entenda as diferenças</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">Descubra qual altura do fade valoriza mais o formato do seu crânio e o seu estilo de vida.</p>
+                    </div>
+                </article>
+
+                <article class="bg-kg-dark rounded-2xl border border-kg-border overflow-hidden hover:border-kg-bronze/40 transition">
+                    <div class="h-44 bg-slate-900 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=600&auto=format&fit=crop&q=80" alt="Como cuidar da barba" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 space-y-2">
+                        <span class="text-[10px] font-bold text-kg-bronze uppercase tracking-wider">Cuidados com a Barba</span>
+                        <h3 class="font-display text-xl font-bold text-white">Como cuidar da barba no dia a dia sem complicação</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">O passo a passo simples de higienização, hidratação com óleo e alinhamento com balm.</p>
+                    </div>
+                </article>
+
+                <article class="bg-kg-dark rounded-2xl border border-kg-border overflow-hidden hover:border-kg-bronze/40 transition">
+                    <div class="h-44 bg-slate-900 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&auto=format&fit=crop&q=80" alt="Pomada, cera ou pasta" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 space-y-2">
+                        <span class="text-[10px] font-bold text-kg-bronze uppercase tracking-wider">Produtos</span>
+                        <h3 class="font-display text-xl font-bold text-white">Pomada, cera ou gel: qual o finalizador ideal?</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">Entenda a diferença entre efeito brilho e efeito matte (seco) para não errar na fixação.</p>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="mt-12 text-center">
+                <p class="text-sm text-slate-300 font-medium mb-4">Gostou das dicas? Deixe o seu visual aos cuidados dos nossos especialistas.</p>
+                <a href="#" class="inline-flex items-center gap-2 bronze-btn-gradient px-8 py-3.5 rounded-xl text-slate-950 font-black text-xs uppercase tracking-wider hover:opacity-95 transition">
+                    Agendar Meu Horário Agora
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- CONTATO, HORÁRIOS & LOCALIZAÇÃO -->
+    <!-- ========================================================================= -->
+    <section id="contato" class="py-20 bg-kg-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-14 space-y-2">
+                <span class="text-kg-bronze font-bold text-xs uppercase tracking-widest">Onde Estamos</span>
+                <h2 class="font-display text-3xl sm:text-5xl font-bold text-white">Seu próximo estilo começa com uma conversa</h2>
+                <p class="text-slate-400 text-sm">Fale diretamente com nossa equipe ou venha nos visitar.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-8 items-stretch">
+                
+                <!-- INFORMAÇÕES DE CONTATO -->
+                <div class="lg:col-span-5 bg-kg-card p-8 rounded-3xl border border-kg-border space-y-6 flex flex-col justify-between">
+                    <div class="space-y-6">
+                        <div>
+                            <span class="text-xs font-bold text-kg-bronze uppercase tracking-wider">Canais Diretos</span>
+                            <h3 class="font-display text-2xl font-bold text-white mt-1">King's Garage Barber</h3>
+                        </div>
+
+                        <div class="space-y-3">
+                            <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20saber%20os%20hor%C3%A1rios%20dispon%C3%ADveis%20na%20barbearia." target="_blank" class="flex items-center gap-4 p-3.5 rounded-xl bg-kg-graphite hover:border-emerald-500/40 border border-kg-border transition group">
+                                <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center shrink-0">
+                                    <i data-lucide="phone-call" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <div class="text-[10px] text-slate-400">WhatsApp & Agendamento</div>
+                                    <div class="text-sm font-bold text-white">(11) 95492-2131</div>
+                                </div>
+                            </a>
+
+                            <a href="mailto:contato@kingsgaragebarber.com.br?subject=Solicita%C3%A7%C3%A3o%20de%20Hor%C3%A1rio%20-%20Site&body=Ol%C3%A1!%20Conheci%20a%20barbearia%20pelo%20site%20e%20gostaria%20de%20verificar%20os%20hor%C3%A1rios%20dispon%C3%ADveis%20para%20atendimento." class="flex items-center gap-4 p-3.5 rounded-xl bg-kg-graphite hover:border-kg-bronze/40 border border-kg-border transition group">
+                                <div class="w-10 h-10 rounded-lg bg-kg-bronze/10 text-kg-bronze flex items-center justify-center shrink-0">
+                                    <i data-lucide="mail" class="w-5 h-5"></i>
+                                </div>
+                                <div class="overflow-hidden">
+                                    <div class="text-[10px] text-slate-400">Agendamento por E-mail</div>
+                                    <div class="text-sm font-bold text-white truncate">contato@kingsgarage.com.br</div>
+                                </div>
+                            </a>
+
+                            <div class="flex items-center gap-4 p-3.5 rounded-xl bg-kg-graphite border border-kg-border">
+                                <div class="w-10 h-10 rounded-lg bg-kg-bronze/10 text-kg-bronze flex items-center justify-center shrink-0">
+                                    <i data-lucide="clock" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <div class="text-[10px] text-slate-400">Horário de Funcionamento</div>
+                                    <div class="text-xs font-bold text-white">Seg a Sex: 09h às 20h | Sáb: 09h às 19h</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 border-t border-kg-border">
+                        <a href="https://maps.google.com" target="_blank" class="w-full py-3 rounded-xl bg-kg-graphite hover:bg-slate-700 text-white font-bold text-xs uppercase tracking-wider transition text-center flex items-center justify-center gap-2 border border-kg-border">
+                            <i data-lucide="map-pin" class="w-4 h-4 text-kg-bronze"></i> Como Chegar no Google Maps
+                        </a>
+                    </div>
+                </div>
+
+                <!-- MAPA DEMO / ENDEREÇO -->
+                <div class="lg:col-span-7 bg-kg-card p-6 sm:p-8 rounded-3xl border border-kg-border flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-bold text-kg-bronze uppercase tracking-wider">Localização Privilegiada</span>
+                            <span class="text-xs text-slate-400 flex items-center gap-1"><i data-lucide="car" class="w-3.5 h-3.5 text-kg-bronze"></i> Estacionamento Próximo</span>
+                        </div>
+                        <h3 class="font-display text-xl font-bold text-white">Av. Paulista, 1500 — Cerqueira César, São Paulo / SP</h3>
+                        
+                        <!-- MAPA VISUAL EMBED -->
+                        <div class="w-full h-64 rounded-2xl bg-kg-graphite overflow-hidden border border-kg-border relative flex items-center justify-center">
+                            <iframe 
+                                title="Mapa de Localização" 
+                                class="w-full h-full opacity-70 grayscale contrast-125" 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.197577134371!2d-46.65657118502227!3d-23.561346384682855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1650000000000!5m2!1spt-BR!2sbr" 
+                                loading="lazy">
+                            </iframe>
+                            <div class="absolute bottom-3 right-3">
+                                <a href="https://maps.google.com" target="_blank" class="px-3 py-1.5 rounded-lg bg-kg-dark/90 backdrop-blur-md text-kg-bronze text-[11px] font-bold border border-kg-border hover:bg-kg-dark">
+                                    Abrir no Maps ↗
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-400">
+                        <span>Aceitamos Cartões (Crédito/Débito), Pix e Dinheiro.</span>
+                        <span class="text-emerald-400 font-bold flex items-center gap-1"><i data-lucide="wifi" class="w-3.5 h-3.5"></i> Wi-Fi Liberado</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- FAQ ACORDEÃO -->
+    <!-- ========================================================================= -->
+    <section class="py-16 bg-kg-charcoal border-t border-kg-border">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <span class="text-kg-bronze font-bold text-xs uppercase tracking-widest">Tire Suas Dúvidas</span>
+                <h2 class="font-display text-3xl font-bold text-white mt-1">Perguntas Frequentes</h2>
+            </div>
+
+            <div class="space-y-3">
+                <details class="group p-5 rounded-2xl bg-kg-dark border border-kg-border">
+                    <summary class="flex justify-between items-center font-bold text-white cursor-pointer list-none text-sm">
+                        <span>Preciso agendar com antecedência?</span>
+                        <i data-lucide="chevron-down" class="w-4 h-4 text-kg-bronze group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="text-xs text-slate-400 mt-3 leading-relaxed">Recomendamos o agendamento prévio via WhatsApp para garantir o seu horário sem espera. Também atendemos por ordem de chegada conforme a disponibilidade da bancada.</p>
+                </details>
+
+                <details class="group p-5 rounded-2xl bg-kg-dark border border-kg-border">
+                    <summary class="flex justify-between items-center font-bold text-white cursor-pointer list-none text-sm">
+                        <span>Posso escolher o barbeiro de minha preferência?</span>
+                        <i data-lucide="chevron-down" class="w-4 h-4 text-kg-bronze group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="text-xs text-slate-400 mt-3 leading-relaxed">Sim! No momento de agendar pelo WhatsApp, basta informar com qual de nossos profissionais você deseja ser atendido.</p>
+                </details>
+
+                <details class="group p-5 rounded-2xl bg-kg-dark border border-kg-border">
+                    <summary class="flex justify-between items-center font-bold text-white cursor-pointer list-none text-sm">
+                        <span>Quanto tempo dura o atendimento de Corte + Barba?</span>
+                        <i data-lucide="chevron-down" class="w-4 h-4 text-kg-bronze group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="text-xs text-slate-400 mt-3 leading-relaxed">O combo completo dura em média de 50 a 60 minutos, garantindo total atenção aos detalhes, toalha quente e finalização premium.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- BANNER FINAL DE CONVERSÃO CITY OF TECH -->
+    <!-- ========================================================================= -->
+    <section class="py-16 bg-gradient-to-r from-slate-950 via-sky-950/70 to-slate-950 border-t border-sky-500/30 text-center">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
+            <span class="px-3 py-1 rounded-full bg-[#00d2ff]/10 border border-[#00d2ff]/30 text-[#00d2ff] font-bold text-[10px] uppercase tracking-wider">
+                Gostou deste modelo para sua Barbearia?
+            </span>
+            <h2 class="text-2xl sm:text-4xl font-extrabold text-white">
+                A City Of Tech personaliza este projeto completo com a identidade da sua empresa.
+            </h2>
+            <p class="text-slate-300 text-xs sm:text-sm max-w-2xl mx-auto">
+                Adaptamos o logotipo, fotos da sua equipe, catálogo de preços, contatos e colocamos seu domínio oficial no ar sem complicação.
+            </p>
+            <div class="pt-2">
+                <a href="https://wa.me/5511999999999?text=Ol%C3%A1%20Daniel!%20Conheci%20os%20modelos%20de%20sites%20da%20City%20Of%20Tech%20e%20gostei%20do%20modelo%20Barbearia%20%26%20Est%C3%A9tica%20Masculina.%20Gostaria%20de%20receber%20uma%20proposta." target="_blank" class="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-gradient-to-r from-sky-500 to-cyan-500 text-slate-950 font-black text-xs uppercase tracking-wider hover:shadow-xl hover:shadow-cyan-500/30 transition">
+                    QUERO ESTE MODELO PARA MEU NEGÓCIO →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- FOOTER DA BARBEARIA -->
+    <!-- ========================================================================= -->
+    <footer class="bg-kg-dark py-12 border-t border-kg-border text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
+            <div class="flex items-center justify-center gap-2">
+                <i data-lucide="crown" class="w-4 h-4 text-kg-bronze"></i>
+                <span class="font-display font-bold text-white tracking-wider">KING'S GARAGE BARBER</span>
+            </div>
+            <p class="text-[11px] text-slate-400">© <span id="year"></span> King's Garage Barber — Todos os direitos reservados. Modelo demonstrativo desenvolvido por <a href="https://cityoftech.com.br" target="_blank" class="text-[#00d2ff] hover:underline font-bold">City Of Tech</a>.</p>
+        </div>
+    </footer>
+
+    <!-- ========================================================================= -->
+    <!-- BARRA FIXA INFERIOR NO MOBILE (WHATSAPP | LIGAR | MAPS) -->
+    <!-- ========================================================================= -->
+    <div class="sm:hidden fixed bottom-0 left-0 right-0 z-40 bg-kg-dark/98 border-t border-kg-border grid grid-cols-3 text-center text-[10px] font-bold uppercase tracking-wider p-2 backdrop-blur-md">
+        <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" class="py-2 flex flex-col items-center justify-center text-emerald-400 hover:bg-kg-graphite rounded-lg">
+            <i data-lucide="message-circle" class="w-4 h-4 mb-1"></i> WhatsApp
+        </a>
+        <a href="tel:5511999999999" class="py-2 flex flex-col items-center justify-center text-kg-bronze hover:bg-kg-graphite rounded-lg border-x border-kg-border">
+            <i data-lucide="phone" class="w-4 h-4 mb-1"></i> Ligar
+        </a>
+        <a href="https://maps.google.com" target="_blank" class="py-2 flex flex-col items-center justify-center text-sky-400 hover:bg-kg-graphite rounded-lg">
+            <i data-lucide="map-pin" class="w-4 h-4 mb-1"></i> Chegar
+        </a>
+    </div>
+
+    <!-- LIGHTBOX MODAL PARA FOTOS -->
+    <div id="lightbox-modal" class="fixed inset-0 z-50 bg-black/90 hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeLightbox()">
+        <div class="relative max-w-3xl w-full">
+            <img id="lightbox-img" src="" alt="Ampliação do trabalho" class="w-full h-auto max-h-[80vh] object-contain rounded-2xl">
+            <button onclick="closeLightbox()" class="absolute top-4 right-4 text-white bg-kg-dark/80 p-2 rounded-full hover:bg-kg-bronze transition">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- SCRIPT CENTRALIZADO DE CONFIGURAÇÃO & COMPORTAMENTO -->
+    <!-- ========================================================================= -->
+    <script>
+        // OBJETO CENTRAL DE CONFIGURAÇÃO
+        // Quando personalizar para um cliente real, você altera apenas os dados aqui:
+        const CONFIG = {
+            nomeBarbearia: "King's Garage Barber",
+            slogan: "Seu estilo. Sua identidade.",
+            cidade: "São Paulo / SP",
+            endereco: "Av. Paulista, 00 — Cerqueira César",
+            telefone: "5511999999999",
+            whatsapp: "5511999999999",
+            mensagemPadrao: "Olá! Conheci a King's Garage Barber pelo site e gostaria de verificar os horários disponíveis para agendamento."
+        };
+
+        // Inicializa ícones Lucide
+        lucide.createIcons();
+
+        // Ano do rodapé
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Configuração dos links de WhatsApp do Header & Hero
+        const baseWaLink = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(CONFIG.mensagemPadrao)}`;
+        document.getElementById('header-whatsapp-btn').href = baseWaLink;
+        document.getElementById('hero-cta-whatsapp').href = baseWaLink;
+        document.getElementById('mobile-nav-whatsapp').href = baseWaLink;
+
+        // Toggle do Menu Mobile
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Filtro da Galeria
+        function filterGallery(category) {
+            const items = document.querySelectorAll('.gallery-item');
+            const buttons = document.querySelectorAll('.gallery-filter-btn');
+
+            buttons.forEach(btn => {
+                if (btn.getAttribute('data-filter') === category) {
+                    btn.className = 'gallery-filter-btn px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider bg-kg-bronze text-slate-950 transition';
+                } else {
+                    btn.className = 'gallery-filter-btn px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider bg-kg-graphite text-slate-300 hover:text-white transition';
+                }
+            });
+
+            items.forEach(item => {
+                if (category === 'todos' || item.classList.contains(category)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Lightbox para Galeria
+        function openLightbox(src) {
+            const modal = document.getElementById('lightbox-modal');
+            const img = document.getElementById('lightbox-img');
+            img.src = src;
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeLightbox() {
+            const modal = document.getElementById('lightbox-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+    </script>
+</body>
+</html>
