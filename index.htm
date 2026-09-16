@@ -4,102 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barbearia CasCade</title>
-    <meta name="description" content="Barbearia premium em São Paulo. Cortes clássicos e modernos, barba alinhada, tratamentos masculinos e ambiente exclusivo. Agende pelo WhatsApp.">
-    <meta name="robots" content="index, follow">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="Barbearia CasCade">
-    <meta property="og:description" content="Seu estilo. Sua identidade. Cortes, barba e experiência premium em um ambiente exclusivo.">
-    <meta property="og:type" content="website">
-
-    <!-- Schema.org LocalBusiness -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BarberShop",
-      "name": "Barbearia CasCade",
-      "image": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=800&auto=format&fit=crop&q=80",
-      "telephone": "+55-11-95492-2131",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Av. Paulista, 1500",
-        "addressLocality": "São Paulo",
-        "addressRegion": "SP",
-        "postalCode": "01310-200",
-        "addressCountry": "BR"
-      },
-      "priceRange": "$$",
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-          "opens": "09:00",
-          "closes": "20:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Saturday",
-          "opens": "09:00",
-          "closes": "19:00"
-        }
-      ]
-    }
-    </script>
-
+    
     <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
-    tailwind.config = {
-        theme: {
-            extend: {
-                colors: {
-                    kg: {
-                        dark: '#1a1d21',        // Fundo principal (Cinza escuro)
-                        charcoal: '#24282d',    // Seções secundárias
-                        graphite: '#2f353b',    // Cards e detalhes
-                        border: '#3e464d',      // Bordas
-                        bronze: '#28a0ad',      // Cor principal da Cascade (Azul)
-                        bronzeHover: '#1f828c', // Tom mais escuro para hover
-                        cobre: '#28a0ad',       // Mantendo o padrão
-                        redAccent: '#28a0ad',   // Substituindo o vermelho
-                        textMuted: '#94a3b8'
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        kg: {
+                            dark: '#1a1d21',
+                            charcoal: '#24282d',
+                            graphite: '#2f353b',
+                            border: '#3e464d',
+                            bronze: '#28a0ad',
+                            bronzeHover: '#1f828c',
+                            cobre: '#28a0ad',
+                            redAccent: '#28a0ad',
+                            textMuted: '#94a3b8'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                        display: ['Oswald', 'Impact', 'sans-serif']
                     }
-                },
-                fontFamily: {
-                    sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
-                    display: ['Oswald', 'Impact', 'sans-serif']
                 }
             }
         }
-    }
-</script>
+    </script>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Fonts & Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
-    style>
-    body {
-        background-color: #1a1d21;
-        color: #f1f5f9;
-        font-family: 'Inter', sans-serif;
-    }
-    .bronze-gradient {
-        background: linear-gradient(135deg, #4ad2e0 0%, #28a0ad 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    .bronze-btn-gradient {
-        background: linear-gradient(135deg, #28a0ad 0%, #1f828c 100%);
-        color: white !important;
-    }
-    details summary::-webkit-details-marker { display: none; }
-</style>
+    <style>
+        body {
+            background-color: #1a1d21;
+            color: #f1f5f9;
+            font-family: 'Inter', sans-serif;
+        }
+        .bronze-gradient {
+            background: linear-gradient(135deg, #4ad2e0 0%, #28a0ad 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bronze-btn-gradient {
+            background: linear-gradient(135deg, #28a0ad 0%, #1f828c 100%);
+            color: white !important;
+        }
+        details summary::-webkit-details-marker { display: none; }
+    </style>
 </head>
-<body class="selection:bg-kg-bronze selection:text-black">
+<body class="selection:bg-kg-bronze selection:text-white">
 
     <!-- ========================================================================= -->
     <!-- BARRA DE DEMONSTRAÇÃO EXCLUSIVA CITY OF TECH (APENAS NO DEMO) -->
